@@ -1,0 +1,251 @@
+/* body */
+*{
+  margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom danger color */
+.btn-danger{
+  background: #a93226 !important;
+}
+.border-danger{
+  color: rgb(180, 25, 25) !important;
+}
+
+/* About title */
+.Adithya
+{
+  color: rgb(180, 25, 25) !important; 
+  font-family: "arial";
+  font-size: 3em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 4s steps(80, end); 
+  transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext { 
+  from {
+      width: 0;
+     transition: all 2s ease-in-out;
+  } 
+}
+
+/* NavBar Button Animation */
+.box {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    background: none;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.box::before {
+    margin-left: auto;
+}
+  
+.box::after, .box::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(180, 25, 25);
+    display: block;
+    transition: 0.5s linear;
+}
+  
+.box:hover::after, .box:hover::before {
+    width: 100%;
+}
+
+.custom{
+  background: rgba(45, 45, 45, 0.6);
+}
+
+/* Timeline */
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: rgb(180, 25, 25);
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+}
+
+.timeline-content {
+	border: 2px solid rgb(180, 25, 25);
+	background-color:#080808
+}
+
+ul.timeline-list li .timeline-content {
+	width: 45%;
+	color: #333;
+	padding: 15px;
+	text-align: left;
+  border-radius: 7px;
+}
+
+ul.timeline-list li:nth-child(2n) .timeline-content {
+	float: right;
+	text-align: left;
+}
+
+.timeline-content h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: rgb(180, 25, 25);
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.timeline-content span {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: poppins;
+	color: rgb(180, 25, 25);
+}
+
+/* Form */
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #f6f5f5;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.submit-btn{
+  background-color: rgb(180, 25, 25);
+  border: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgb(247, 35, 35);
+}
+
+/* custom danger color */
+.text-danger{
+  color: rgb(180, 25, 25) !important;
+}
+
+.border-dander{
+  color: rgb(180, 25, 25) !important;
+}
+
+/* back to top button */
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: fixed;
+  right: 30px; 
+  bottom: 35px;
+  z-index: 999; 
+}
+
+@media (max-width: 600px) {
+
+    .a-logo{
+      margin-left: -28px;
+    }
+
+    .Adithya{
+      font-size: 40px;
+    }
+
+    .about-body p{
+      font-size: 15px;
+    }
+
+    .row-cols-sm-1 h3{
+      font-size: 20px;
+    }
+
+    .row-cols-sm-1 h5{
+      font-size: 17px;
+    }
+
+    .row-cols-sm-1{
+      padding: 0 10px 0 10px;
+    }
+
+    #Qualification{
+      margin-right: -22px;
+    }
+
+    .service-body{
+      padding: 0 22px 0 22px;
+    }
+
+    #service-card h3{
+      font-size: 15px;
+    }
+
+    #service-card p{
+      font-size: 12px;
+    }
+
+    .timeline-content{
+      padding: 5px;
+    }
+    .timeline-content h4{
+      font-size: 13px;
+    }
+
+    .timeline-content h6{
+      font-size: 12px;
+    }
+
+    .timeline-content p{
+      font-size: 10px;
+    }
+
+    .footer-text h5 {
+      margin-top: 8px;
+        font-size: 15px;
+    }
+
+}
